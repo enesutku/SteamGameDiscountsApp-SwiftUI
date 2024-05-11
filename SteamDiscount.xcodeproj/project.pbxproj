@@ -11,6 +11,7 @@
 		BCE498DF2BEF499000008159 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE498DE2BEF499000008159 /* ContentView.swift */; };
 		BCE498E12BEF499100008159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE498E02BEF499100008159 /* Assets.xcassets */; };
 		BCE498E42BEF499100008159 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE498E32BEF499100008159 /* Preview Assets.xcassets */; };
+		BCE498EB2BEF49C400008159 /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE498EA2BEF49C400008159 /* Games.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BCE498DE2BEF499000008159 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BCE498E02BEF499100008159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCE498E32BEF499100008159 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCE498EA2BEF49C400008159 /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		BCE498DB2BEF499000008159 /* SteamDiscount */ = {
 			isa = PBXGroup;
 			children = (
-				BCE498DC2BEF499000008159 /* SteamDiscountApp.swift */,
-				BCE498DE2BEF499000008159 /* ContentView.swift */,
+				BCE498F02BEF4FED00008159 /* Views */,
+				BCE498EF2BEF4FD800008159 /* Root */,
+				BCE498EE2BEF4FD200008159 /* Service */,
 				BCE498E02BEF499100008159 /* Assets.xcassets */,
 				BCE498E22BEF499100008159 /* Preview Content */,
 			);
@@ -65,6 +68,30 @@
 				BCE498E32BEF499100008159 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCE498EE2BEF4FD200008159 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BCE498EA2BEF49C400008159 /* Games.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BCE498EF2BEF4FD800008159 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				BCE498DC2BEF499000008159 /* SteamDiscountApp.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		BCE498F02BEF4FED00008159 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCE498DE2BEF499000008159 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE498EB2BEF49C400008159 /* Games.swift in Sources */,
 				BCE498DF2BEF499000008159 /* ContentView.swift in Sources */,
 				BCE498DD2BEF499000008159 /* SteamDiscountApp.swift in Sources */,
 			);
