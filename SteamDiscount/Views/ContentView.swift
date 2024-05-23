@@ -13,7 +13,7 @@ struct ContentView: View {
                 NavigationLink {
                     VStack {
                         Text("\(game.title)")
-                    Text("Steam Rating Percent: %\(game.steamRatingPercent)")
+                    Text("Steam Rating: %\(game.steamRatingPercent)")
                     }
                 } label: {
                     HStack(spacing: 30) {
@@ -29,7 +29,7 @@ struct ContentView: View {
                                 .fontWeight(.semibold)
                             Text("Normal: $\(game.normalPrice)")
                                 .strikethrough()
-                            Text("Discounted: $\(game.salePrice)")
+                            Text("Discount: $\(game.salePrice)")
                                 .foregroundStyle(.red)
                         })
                     }
@@ -40,7 +40,7 @@ struct ContentView: View {
                 Api().loadData(url: "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=15") {
                     games in self.games = games
                 }
-            }.navigationTitle("Steam Games")
+            }.navigationTitle("Games")
         }
     }
 }
